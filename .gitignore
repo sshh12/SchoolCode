@@ -9,3 +9,5 @@
 hs_err_pid*
 /Connect4Project/nbproject/private/
 /Connect4Project/build/
+
+*.pyc

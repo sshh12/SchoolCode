@@ -1,6 +1,6 @@
 # Connect4 Java AI
 
-This was my first use of a github repo for one of my school projects.
+This was my first AI so it includes a few minmax implementation errors and poorly optimized code.
 
 The goal was to design an AI (an agent) to defeat the "EnemyAgent".
 

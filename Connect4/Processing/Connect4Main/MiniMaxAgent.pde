@@ -1,7 +1,7 @@
 
 class MiniMaxAgent extends Player {
 
-  final int depth = 7;
+  final int depth = 10;
   final int MAX = 100000, MIN = -MAX;
 
   public MiniMaxAgent(Connect4Game g) {
@@ -70,7 +70,7 @@ class MiniMaxAgent extends Player {
           current[r][c] = isRed ? 2:1;
           v = min(v, alphabeta(current, depth - 1, alpha, beta, !maxP));
           current[r][c] = 0;
-          alpha = min(alpha, v);
+          beta = min(alpha, v);
           if (beta <= alpha) {
             break;
           }
