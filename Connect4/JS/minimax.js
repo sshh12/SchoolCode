@@ -30,8 +30,8 @@ function AlphaBetaAgent(id, depth) {
                 });
             }
         }
-		
-		return moves;
+
+        return moves;
 
     }
 
@@ -90,15 +90,15 @@ AlphaBetaAgent.prototype.evaluate = (board, id) => {
     let themPoints = [mostVertical(board, them), mostHorizontal(board, them), mostIncDiag(board, them), mostDecDiag(board, them)];
 
     if (themPoints.includes(4)) {
-      return MIN;
+        return MIN;
     }
 
     if (mePoints.includes(4)) {
-      return MAX;
+        return MAX;
     }
 
     let meScore = mePoints.reduce((a, b) => a + b) * 20;
-	let themScore = themPoints.reduce((a, b) => a + b) * 20;
+    let themScore = themPoints.reduce((a, b) => a + b) * 20;
 
     //meScore += Helpers.count(mePoints, 3) * 150;
     //themScore += Helpers.count(themPoints, 3) * 200;
@@ -109,15 +109,15 @@ AlphaBetaAgent.prototype.evaluate = (board, id) => {
 let mostVertical = (board, id) => {
     let most = 0;
     for (let c = 0; c < board[0].length; c++) {
-      for (let r = 0; r < board.length; r++) {
-        if (board[r][c] == id) {
-          let count = 1;
-          while (r + count < board.length && board[r + count][c] == id) {
-            count++;
-          }
-          most = Math.max(most, count);
+        for (let r = 0; r < board.length; r++) {
+            if (board[r][c] == id) {
+                let count = 1;
+                while (r + count < board.length && board[r + count][c] == id) {
+                    count++;
+                }
+                most = Math.max(most, count);
+            }
         }
-      }
     }
     return most;
 }
@@ -125,15 +125,15 @@ let mostVertical = (board, id) => {
 let mostHorizontal = (board, id) => {
     let most = 0;
     for (let r = 0; r < board.length; r++) {
-      for (let c = 0; c < board[0].length; c++) {
-        if (board[r][c] == id) {
-          let count = 1;
-          while (c + count < board[0].length && board[r][c + count] == id) {
-            count++;
-          }
-          most = Math.max(most, count);
+        for (let c = 0; c < board[0].length; c++) {
+            if (board[r][c] == id) {
+                let count = 1;
+                while (c + count < board[0].length && board[r][c + count] == id) {
+                    count++;
+                }
+                most = Math.max(most, count);
+            }
         }
-      }
     }
     return most;
 }
@@ -141,16 +141,18 @@ let mostHorizontal = (board, id) => {
 let mostIncDiag = (board, id) => {
     let most = 0;
     for (let r = 0; r < board.length; r++) {
-      for (let c = 0; c < board[0].length; c++) {
-        let rr = r, cc = c, count = 0;
+        for (let c = 0; c < board[0].length; c++) {
+            let rr = r,
+                cc = c,
+                count = 0;
 
-        while (rr > 0 && cc < board[rr].length && board[rr][cc] == id) {
-          rr--;
-          cc++;
-          count++;
+            while (rr > 0 && cc < board[rr].length && board[rr][cc] == id) {
+                rr--;
+                cc++;
+                count++;
+            }
+            most = Math.max(most, count);
         }
-        most = Math.max(most, count);
-      }
     }
     return most;
 }
@@ -158,15 +160,17 @@ let mostIncDiag = (board, id) => {
 let mostDecDiag = (board, id) => {
     let most = 0;
     for (let r = 0; r < board.length; r++) {
-      for (let c = 0; c < board[0].length; c++) {
-        let rr = r, cc = c, count = 0;
-        while (rr < board.length && cc < board[rr].length && board[rr][cc] == id) {
-          rr++;
-          cc++;
-          count++;
+        for (let c = 0; c < board[0].length; c++) {
+            let rr = r,
+                cc = c,
+                count = 0;
+            while (rr < board.length && cc < board[rr].length && board[rr][cc] == id) {
+                rr++;
+                cc++;
+                count++;
+            }
+            most = Math.max(most, count);
         }
-        most = Math.max(most, count);
-      }
     }
     return most;
 }
