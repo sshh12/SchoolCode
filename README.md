@@ -12,4 +12,4 @@ Here is a compilation of many of the projects and scripts I wrote during High Sc
 	+ A collection of fractals using recursive algorithms.
 	
 + KD Tree
-	+ A collection of fractals using recursive algorithms.
+	+ A multidimensional binary tree
