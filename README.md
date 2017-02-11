@@ -10,3 +10,6 @@ Here is a compilation of many of the projects and scripts I wrote during High Sc
 
 + Fractals
 	+ A collection of fractals using recursive algorithms.
+	
++ KD Tree
+	+ A collection of fractals using recursive algorithms.
