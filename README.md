@@ -1,6 +1,6 @@
-# Code
+# School Code
 
-Here is a compilation of many of the projects and scripts I wrote during High School.
+A compilation of the projects and scripts I wrote during High School.
 
 + Connect4
 	+ A basic implementation of MiniMax in Connect4.
@@ -13,3 +13,6 @@ Here is a compilation of many of the projects and scripts I wrote during High Sc
 	
 + KD Tree
 	+ A multidimensional binary tree
+	
++ 8-Puzzle
+	+ An A* based puzzle solver
