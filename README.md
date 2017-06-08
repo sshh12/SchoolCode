@@ -2,20 +2,22 @@
 
 A compilation of the projects and scripts I wrote during High School.
 
-+ Connect4
-	+ A beginner implementation of MiniMax in Connect4.
+## Contents
 
-+ Hangman
-	+ A game of impossible hangman which chooses words that least fit your guesses.
+#### Connect4
+A beginner implementation of MiniMax in Connect4.
 
-+ Fractals
-	+ A collection of fractals using recursive algorithms.
+#### Hangman
+A game of impossible hangman which chooses words that least fit your guesses.
+
+#### Fractals
+A collection of fractals using recursive algorithms.
 	
-+ KD Tree
-	+ A multidimensional binary tree
+#### KD Tree
+A multidimensional binary tree
 	
-+ 8-Puzzle
-	+ An A* based puzzle solver
+#### 8-Puzzle
+An A* based puzzle solver
 	
-+ Algorithums
-	+ A collection of algorithms
+#### Algorithms
+A collection of algorithms
