@@ -29,8 +29,13 @@ def quick_sort(nums, low=None, high=None):
         quick_sort(nums, low, index - 1)
         quick_sort(nums, index + 1, high)
 
-nums = [1, 5, 2, 6, 10, 25, 15, 12, 8]
+def main():
 
-print(nums)
-quick_sort(nums)
-print(nums)
+    nums = [1, 5, 2, 6, 10, 25, 15, 12, 8]
+
+    print(nums)
+    quick_sort(nums)
+    print(nums)
+
+if __name__ == '__main__':
+    main()

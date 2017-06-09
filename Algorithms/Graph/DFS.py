@@ -65,16 +65,21 @@ def solve2(grid, cur, end, visited=None, path=None):
                     path.remove(cur)
     return None
 
-grid = [
-    ".####",
-    ".#...",
-    ".#.#.",
-    "...#.",
-    ".##.."
-]
+def main():
 
-for p in solve(grid, (0,0), (4,4)):
-    print(p)
-print("------")
-for p in solve2(grid, (0,0), (4,4)):
-    print(p)
+    grid = [
+        ".####",
+        ".#...",
+        ".#.#.",
+        "...#.",
+        ".##.."
+    ]
+
+    for p in solve(grid, (0,0), (4,4)):
+        print(p)
+    print("------")
+    for p in solve2(grid, (0,0), (4,4)):
+        print(p)
+
+if __name__ == '__main__':
+    main()

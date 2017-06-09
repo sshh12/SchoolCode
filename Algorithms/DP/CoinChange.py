@@ -24,8 +24,13 @@ def get_num_coins2(coins, i, balance):
 
     return db[balance]
 
-coins = [1, 2, 8, 12]
+def main():
 
-print(get_num_coins(coins, len(coins), 25))
-print("------")
-print(get_num_coins2(coins, len(coins), 25))
+    coins = [1, 2, 8, 12]
+
+    print(get_num_coins(coins, len(coins), 25))
+    print("------")
+    print(get_num_coins2(coins, len(coins), 25))
+    
+if __name__ == '__main__':
+    main()

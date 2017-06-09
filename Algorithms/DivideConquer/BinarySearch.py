@@ -37,7 +37,13 @@ def binary_search2(nums, x, bottom=None, top=None):
 
     return -1
 
-nums = sorted([3, 5, 657, 23, 5, 9, 2, 54, 22, 10, 14, 20, 42, 32, 15, 11])
-print(binary_search(nums, 10))
-print("------")
-print(binary_search2(nums, 10))
+def main():
+
+    nums = sorted([3, 5, 657, 23, 5, 9, 2, 54, 22, 10, 14, 20, 42, 32, 15, 11])
+    
+    print(binary_search(nums, 10))
+    print("------")
+    print(binary_search2(nums, 10))
+
+if __name__ == '__main__':
+    main()
