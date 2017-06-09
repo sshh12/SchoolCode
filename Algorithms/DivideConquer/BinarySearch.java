@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 public class BinarySeach {
 
-    private static int binarySearch(int[] nums, int x) {
+    public static int binarySearch(int[] nums, int x) {
 
         int bottom = 0, top = nums.length - 1;
 
@@ -25,7 +25,7 @@ public class BinarySeach {
 
     }
 
-    private static int binarySearch2(int[] nums, int x) {
+    public static int binarySearch2(int[] nums, int x) {
 
         return recur(nums, 0, nums.length - 1, x);
 

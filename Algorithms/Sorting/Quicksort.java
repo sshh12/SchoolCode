@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 public class Quicksort {
 
-    public static int partition(int[] nums, int low, int high) {
+    private static int partition(int[] nums, int low, int high) {
 
         int pivot = nums[high], i = low - 1;
 
