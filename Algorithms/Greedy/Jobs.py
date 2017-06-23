@@ -10,7 +10,7 @@ class Job(object):
 
 def print_best_order(jobs):
 
-    jobs.sort(key=lambda j: j.profit, reverse=True)
+    jobs.sort(key=lambda job: job.profit, reverse=True)
 
     n = len(jobs)
 
