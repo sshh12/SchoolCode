@@ -14,8 +14,8 @@ def print_best_order(jobs):
 
     n = len(jobs)
 
-    results = [0 for _ in range(n)]
-    times = [False for _ in range(n)]
+    results = [ 0 ] * n
+    times = [ False ] * n
 
     for i in range(n):
 

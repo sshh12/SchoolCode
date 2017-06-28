@@ -4,8 +4,8 @@ def print_distances(graph, from_vertex=0):
 
     num_vertices = len(graph)
 
-    dists = [INF for _ in range(num_vertices)]
-    visited = [False for _ in range(num_vertices)]
+    dists = [ INF ] * num_vertices
+    visited = [ False ] * num_vertices
 
     dists[from_vertex] = 0
 
