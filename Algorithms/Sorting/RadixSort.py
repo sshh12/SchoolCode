@@ -1,4 +1,4 @@
-def sort_count(nums, mask):
+def _sort_count(nums, mask):
 
     counts = [ 0 for _ in range(10) ]
     out = [ 0 for _ in nums ]
@@ -23,7 +23,7 @@ def radix_sort(nums):
 
     while m / mask > 0:
 
-        sort_count(nums, mask)
+        _sort_count(nums, mask)
 
         mask *= 10
 

@@ -21,7 +21,7 @@ def brute_force(points):
 
     return min_val
 
-def find_smallest(points_x, points_y):
+def _find_smallest(points_x, points_y):
 
     n = len(points_x)
 
@@ -40,8 +40,8 @@ def find_smallest(points_x, points_y):
         else:
             points_right.append(p)
 
-    smallest_left = find_smallest(points_x[:middle+1], points_left)
-    smallest_right = find_smallest(points_x[middle+1:], points_right)
+    smallest_left = _find_smallest(points_x[:middle+1], points_left)
+    smallest_right = _find_smallest(points_x[middle+1:], points_right)
 
     smallest = min(smallest_left, smallest_right)
 
@@ -73,7 +73,7 @@ def get_smallest_distance(points):
     points_x.sort(key=lambda point: point.x)
     points_y.sort(key=lambda point: point.y)
 
-    return find_smallest(points_x, points_y)
+    return _find_smallest(points_x, points_y)
 
 def main():
 

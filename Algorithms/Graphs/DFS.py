@@ -4,7 +4,7 @@ def _in_bounds(grid, point):
     r, c = point
     return min(r, c) >= 0 and r < len(grid) and c < len(grid[0])
 
-def get_neighbors(grid, point):
+def _get_neighbors(grid, point):
 
     r, c = point
     for rr, cc in [[r + 1, c], [r - 1, c], [r, c + 1], [r, c - 1]]:
@@ -36,7 +36,7 @@ def solve(grid, start, end):
 
         else:
 
-            for n in get_neighbors(grid, cur):
+            for n in _get_neighbors(grid, cur):
                 if n not in visited:
                     stack.append(n)
                     parents.update({n : cur})
@@ -55,7 +55,7 @@ def solve2(grid, cur, end, visited=None, path=None):
         path.append(cur)
         return path
     else:
-        for n in get_neighbors(grid, cur):
+        for n in _get_neighbors(grid, cur):
             if n not in visited:
                 path.append(cur)
                 new_path = solve2(grid, n, end, visited, path)
