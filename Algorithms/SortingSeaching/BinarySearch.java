@@ -54,7 +54,9 @@ public class BinarySeach {
     public static void main(String[] args) {
 
         int[] nums = new int[]{3, 5, 657, 23, 5, 9, 2, 54, 22, 10, 14, 20, 42, 32, 15, 11};
+        
         Arrays.sort(nums);
+
         System.out.println(Arrays.toString(nums));
 
         System.out.println(binarySearch(nums, 10));
