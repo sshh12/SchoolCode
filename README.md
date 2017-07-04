@@ -23,21 +23,21 @@ An A* based puzzle solver.
 
 #### Backtracking
 
-##### NQueens
+###### NQueens
 
 #### DivideConquer
 
-##### ClosestPoints
+###### ClosestPoints
 
 #### DP
 
-##### BinaryKnapsack
+###### BinaryKnapsack
 
-##### CoinChange
+###### CoinChange
 
-##### LIS
+###### LIS
 
-##### NumPaths
+###### NumPaths
 
 ###### NumSubsetSum
 
@@ -73,7 +73,7 @@ An A* based puzzle solver.
 
 ###### BinarySearch
 
-###### InerpolationSearch
+###### InterpolationSearch
 
 ###### QuickSort
 
