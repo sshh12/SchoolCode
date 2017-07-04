@@ -1,7 +1,7 @@
 
 import java.util.Arrays;
 
-public class Quicksort {
+public class QuickSort {
 
     private static int partition(int[] nums, int low, int high) {
 

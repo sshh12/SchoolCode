@@ -2,7 +2,7 @@
 
 A compilation of the projects and scripts I wrote during High School.
 
-## Contents
+## Projects
 
 #### Connect4
 A beginner implementation of MiniMax in Connect4.
@@ -19,5 +19,64 @@ A multidimensional binary tree.
 #### 8-Puzzle
 An A* based puzzle solver.
 
-#### Algorithms
-A collection of algorithms.
+## Algorithms
+
+#### Backtracking
+
+##### NQueens
+
+#### DivideConquer
+
+##### ClosestPoints
+
+#### DP
+
+##### BinaryKnapsack
+
+##### CoinChange
+
+##### LIS
+
+##### NumPaths
+
+###### NumSubsetSum
+
+###### RodCutting
+
+###### StairSteps
+
+###### SubsetSum
+
+#### Graphs
+
+###### DFS
+
+###### Dijkstras
+
+###### KruskalMST
+
+###### PrimMST
+
+###### TopologicalSort
+
+#### Greedy
+
+###### FractionalKnapsack
+
+###### Jobs
+
+###### MinSquares
+
+###### SmallestNumber
+
+#### SortingSearching
+
+###### BinarySearch
+
+###### InerpolationSearch
+
+###### QuickSort
+
+###### RadixSort
+
+###### ShellSort
