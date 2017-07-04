@@ -27,7 +27,7 @@ def print_MST(graph):
     for _ in range(n - 1):
 
         u = _min_index(dists, visited)
-        
+
         visited[u] = True
 
         for v in range(n):
@@ -44,10 +44,10 @@ def main():
 
     graph = [
         [0, 8, 0, 6, 0],
-        [1, 0, 4, 1, 3],
-        [0, 9, 0, 0, 1],
-        [7, 9, 0, 0, 2],
-        [0, 2, 7, 9, 0]
+        [8, 0, 4, 1, 3],
+        [0, 4, 0, 0, 1],
+        [6, 1, 0, 0, 2],
+        [0, 3, 1, 2, 0]
     ]
 
     print_MST(graph)
