@@ -2,7 +2,7 @@
 import java.awt.Point;
 import java.util.*;
 
-public class DFS {
+public class BFS {
 
     private static final int[][] dirs = new int[][]{{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
 
@@ -15,12 +15,12 @@ public class DFS {
         Set<Point> visited = new HashSet<>();
         Map<Point, Point> parents = new HashMap<>();
 
-        Stack<Point> s = new Stack<>();
-        s.add(start);
+        Queue<Point> q = new LinkedList<>();
+        q.add(start);
 
-        while (!s.isEmpty()) {
+        while (!q.isEmpty()) {
 
-            Point cur = s.pop();
+            Point cur = q.remove();
             visited.add(cur);
 
             if (cur.equals(end)) {
@@ -40,12 +40,9 @@ public class DFS {
                 for (int[] dir : dirs) {
 
                     Point n = new Point(cur.x + dir[0], cur.y + dir[1]);
-
                     if (inBounds(mat, n) && !visited.contains(n) && mat[n.x][n.y] == '.') {
-
-                        s.add(n);
+                        q.add(n);
                         parents.put(n, cur);
-
                     }
 
                 }
@@ -59,16 +56,33 @@ public class DFS {
     }
 
     public static List<Point> solve2(char[][] mat, Point start, Point end) {
-        return recur(mat, start, end, new HashSet<Point>(), new ArrayList<Point>());
+
+        Queue<Point> q = new LinkedList<>();
+
+        q.add(start);
+
+        return recur(mat, end, new HashSet<Point>(), new HashMap<Point, Point>(), q);
+
     }
 
-    private static List<Point> recur(char[][] mat, Point cur, Point end, Set<Point> visited, List<Point> path) {
+    private static List<Point> recur(char[][] mat, Point end, Set<Point> visited, HashMap<Point, Point> parents, Queue<Point> q) {
+
+        if(q.isEmpty()) return null;
+
+        Point cur = q.remove();
 
         visited.add(cur);
 
         if (cur.equals(end)) {
 
-            path.add(cur);
+            LinkedList<Point> path = new LinkedList<>();
+            Point node = cur;
+
+            while (node != null) {
+                path.addFirst(node);
+                node = parents.get(node);
+            }
+
             return path;
 
         } else {
@@ -79,16 +93,15 @@ public class DFS {
 
                 if (inBounds(mat, n) && !visited.contains(n) && mat[n.x][n.y] == '.') {
 
-                    path.add(cur);
-                    List<Point> p = recur(mat, n, end, visited, path);
+                    parents.put(n, cur);
+
+                    q.add(n);
+
+                    List<Point> p = recur(mat, end, visited, parents, q);
 
                     if (p != null) {
 
                         return p;
-
-                    } else {
-
-                        path.remove(cur);
 
                     }
 

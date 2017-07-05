@@ -16,11 +16,11 @@ def solve(grid, start, end):
     visited = []
     parents = {}
 
-    stack = [start]
+    q = [start]
 
-    while len(stack) > 0:
+    while len(q) > 0:
 
-        cur = stack.pop()
+        cur = q.pop(0)
         visited.append(cur)
 
         if cur == end:
@@ -38,22 +38,35 @@ def solve(grid, start, end):
 
             for n in _get_neighbors(grid, cur):
                 if n not in visited:
-                    stack.append(n)
+                    q.append(n)
                     parents.update({n : cur})
 
     return None
 
 
-def solve2(grid, cur, end, visited=None, path=None):
+def solve2(grid, end, visited=None, parents=None, q=None, start=None):
 
-    if visited == None or path == None:
-        return solve2(grid, cur, end, [], [])
+    if visited == None or parents == None or q == None:
+
+        q = [start]
+
+        return solve2(grid, end, [], {}, q)
+
+    elif len(q) == 0:
+        return None
+
+    cur = q.pop(0)
 
     visited.append(cur)
 
     if cur == end:
 
-        path.append(cur)
+        path = []
+        node = cur
+
+        while node != None:
+            path.insert(0, node)
+            node = parents.get(node)
 
         return path
 
@@ -63,17 +76,16 @@ def solve2(grid, cur, end, visited=None, path=None):
 
             if n not in visited:
 
-                path.append(cur)
-                new_path = solve2(grid, n, end, visited, path)
+                parents.update({n : cur})
+
+                q.append(n)
+
+                new_path = solve2(grid, end, visited, parents, q)
 
                 if new_path:
 
                     return new_path
 
-                else:
-
-                    path.remove(cur)
-                    
     return None
 
 def main():
@@ -89,7 +101,7 @@ def main():
     for p in solve(grid, (0,0), (4,4)):
         print(p)
     print("------")
-    for p in solve2(grid, (0,0), (4,4)):
+    for p in solve2(grid, (4,4), start=(0,0)):
         print(p)
 
 if __name__ == '__main__':
