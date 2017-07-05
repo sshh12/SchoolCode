@@ -49,6 +49,8 @@ An A* based puzzle solver.
 
 #### Graphs
 
+###### BoruvkaMST
+
 ###### DFS
 
 ###### Dijkstras
