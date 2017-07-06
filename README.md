@@ -79,6 +79,8 @@ An A* based puzzle solver.
 
 ###### BinarySearch
 
+###### BucketSort
+
 ###### InterpolationSearch
 
 ###### QuickSort
