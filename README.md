@@ -88,3 +88,5 @@ An A* based puzzle solver.
 ###### RadixSort
 
 ###### ShellSort
+
+###### SelectionSort
