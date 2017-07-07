@@ -73,6 +73,8 @@ An A* based puzzle solver.
 
 ###### Jobs
 
+###### LargestNumber
+
 ###### MinSquares
 
 ###### SmallestNumber
