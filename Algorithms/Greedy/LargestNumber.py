@@ -1,23 +1,11 @@
 
-def sort(values, compare):
-
-    for i in range(len(values)):
-
-        min_index = i
-
-        for j in range(i, len(values)):
-
-            if compare(values[j], values[min_index]) < 0:
-
-                min_index = j
-
-        values[i], values[min_index] = values[min_index], values[i]
+from functools import cmp_to_key
 
 def get_largest_number(nums):
 
     values = list(map(str, nums))
 
-    sort(values, lambda a, b: (b + a) > (a + b))
+    values.sort(key=cmp_to_key( lambda a, b: (b + a) > (a + b) ))
 
     return int("".join(values))
 
