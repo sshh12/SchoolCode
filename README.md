@@ -67,6 +67,8 @@ An A* based puzzle solver.
 
 #### Greedy
 
+###### CoveringSegments
+
 ###### FractionalKnapsack
 
 ###### Jobs
