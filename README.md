@@ -75,6 +75,8 @@ An A* based puzzle solver.
 
 ###### LargestNumber
 
+###### MaxDotProduct
+
 ###### MinSquares
 
 ###### SmallestNumber
