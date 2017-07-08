@@ -79,6 +79,8 @@ An A* based puzzle solver.
 
 ###### SmallestNumber
 
+###### UniqueSummands
+
 #### SortingSearching
 
 ###### BinarySearch
