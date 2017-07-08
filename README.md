@@ -21,15 +21,37 @@ An A* based puzzle solver.
 
 ## Algorithms
 
-#### Backtracking
+#### SortingSearching
 
-###### NQueens
+###### BinarySearch
 
-###### Permutations
+###### BucketSort
 
-#### DivideConquer
+###### InterpolationSearch
 
-###### ClosestPoints
+###### QuickSort
+
+###### RadixSort
+
+###### ShellSort
+
+###### SelectionSort
+
+#### Graphs
+
+###### BFS
+
+###### BoruvkaMST
+
+###### DFS
+
+###### Dijkstras
+
+###### KruskalMST
+
+###### PrimMST
+
+###### TopologicalSort
 
 #### DP
 
@@ -49,22 +71,6 @@ An A* based puzzle solver.
 
 ###### SubsetSum
 
-#### Graphs
-
-###### BFS
-
-###### BoruvkaMST
-
-###### DFS
-
-###### Dijkstras
-
-###### KruskalMST
-
-###### PrimMST
-
-###### TopologicalSort
-
 #### Greedy
 
 ###### CoveringSegments
@@ -83,18 +89,12 @@ An A* based puzzle solver.
 
 ###### UniqueSummands
 
-#### SortingSearching
+#### Backtracking
 
-###### BinarySearch
+###### NQueens
 
-###### BucketSort
+###### Permutations
 
-###### InterpolationSearch
+#### DivideConquer
 
-###### QuickSort
-
-###### RadixSort
-
-###### ShellSort
-
-###### SelectionSort
+###### ClosestPoints
