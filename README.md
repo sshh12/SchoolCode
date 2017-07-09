@@ -43,6 +43,8 @@ An A* based puzzle solver.
 
 ###### BFS
 
+###### Bipartite
+
 ###### BoruvkaMST
 
 ###### DFS
