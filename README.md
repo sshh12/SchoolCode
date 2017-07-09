@@ -27,6 +27,8 @@ An A* based puzzle solver.
 
 ###### BucketSort
 
+###### HeapSort
+
 ###### InterpolationSearch
 
 ###### QuickSort
