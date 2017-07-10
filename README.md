@@ -89,6 +89,8 @@ An A* based puzzle solver.
 
 ###### MinSquares
 
+###### PerfectChange
+
 ###### SmallestNumber
 
 ###### UniqueSummands
