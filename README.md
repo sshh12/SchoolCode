@@ -63,6 +63,8 @@ An A* based puzzle solver.
 
 ###### CoinChange
 
+###### LCS
+
 ###### LIS
 
 ###### NumPaths
