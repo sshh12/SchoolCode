@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 public class BoruvkaMST {
 
-    private static class Edge implements Comparable<Edge> {
+    private static class Edge {
 
         int dist, fromVertex, toVertex;
 
@@ -12,13 +12,6 @@ public class BoruvkaMST {
             fromVertex = from;
             toVertex = to;
             dist = weight;
-
-        }
-
-        @Override
-        public int compareTo(Edge other) {
-
-            return dist - other.dist;
 
         }
 
