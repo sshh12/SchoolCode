@@ -33,6 +33,8 @@ An A* based puzzle solver.
 
 ###### InterpolationSearch
 
+###### MergeSort
+
 ###### QuickSort
 
 ###### RadixSort
