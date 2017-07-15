@@ -89,6 +89,8 @@ An A* based puzzle solver.
 
 ###### FractionalKnapsack
 
+###### Huffman
+
 ###### Jobs
 
 ###### LargestNumber
