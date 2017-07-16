@@ -15,9 +15,7 @@ public class InterpolationSearch {
 
                 return position;
 
-            }
-
-            if (nums[position] < x) {
+            } else if (nums[position] < x) {
 
                 bottom = position + 1;
 
@@ -36,6 +34,8 @@ public class InterpolationSearch {
     public static void main(String[] args) {
 
         int[] nums = new int[]{2, 15, 28, 34, 44, 51, 67, 79, 87, 93, 105};
+
+        Arrays.sort(nums);
 
         System.out.println(Arrays.toString(nums));
 
