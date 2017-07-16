@@ -1,9 +1,10 @@
+"use strict";
 
 let sortCount = (nums, mask) => {
 
     let counts = new Array(10);
     counts.fill(0);
-    
+
     let out = new Array(nums.length);
     out.fill(0);
 

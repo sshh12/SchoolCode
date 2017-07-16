@@ -1,3 +1,4 @@
+"use strict";
 
 let merge = (nums, leftIndex, middleIndex, rightIndex) => {
 

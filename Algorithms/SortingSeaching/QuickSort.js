@@ -1,3 +1,4 @@
+"use strict";
 
 let partition = (nums, low, high) => {
 

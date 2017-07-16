@@ -37,19 +37,15 @@ public class BucketSort {
 
         }
 
+        int arrayIndex = 0;
+
         for (int i = 0; i < numBuckets; i++) {
 
             Collections.sort(buckets[i]);
 
-        }
-
-        int index = 0;
-
-        for (int i = 0; i < numBuckets; i++) {
-
             for (int j = 0; j < buckets[i].size(); j++) {
 
-                nums[index++] = buckets[i].get(j);
+                nums[arrayIndex++] = buckets[i].get(j);
 
             }
 

@@ -1,3 +1,4 @@
+"use strict";
 
 class Heap { // Insert Actual Heap Here...
 

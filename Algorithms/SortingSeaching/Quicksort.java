@@ -42,19 +42,13 @@ public class QuickSort {
 
     }
 
-    public static void quickSort(int[] nums) {
-
-        quickSort(nums, 0, nums.length - 1);
-
-    }
-
     public static void main(String[] args) {
 
         int[] nums = {1, 5, 2, 6, 10, 25, 15, 12, 8};
 
         System.out.println(Arrays.toString(nums));
 
-        quickSort(nums);
+        quickSort(nums, 0, nums.length - 1);
 
         System.out.println(Arrays.toString(nums));
 

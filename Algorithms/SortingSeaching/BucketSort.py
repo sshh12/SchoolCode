@@ -11,19 +11,17 @@ def bucket_sort(nums, num_buckets=4):
 
         buckets[index].append(n)
 
+    array_index = 0
+
     for bucket in buckets:
 
         bucket.sort()
 
-    index = 0
-
-    for bucket in buckets:
-
         for num in bucket:
 
-            nums[index] = num
+            nums[array_index] = num
 
-            index += 1
+            array_index += 1
 
 def main():
 

@@ -1,10 +1,11 @@
+"use strict";
 
-bucketSort = (nums, numBuckets = 4) => {
+let bucketSort = (nums, numBuckets = 4) => {
 
     let buckets = [];
     while (buckets.push([]) < numBuckets);
 
-    mx = Math.max(...nums) + 1
+    let mx = Math.max(...nums) + 1
 
     for (let n of nums) {
 
@@ -14,7 +15,7 @@ bucketSort = (nums, numBuckets = 4) => {
 
     }
 
-    let aryIndex = 0;
+    let arrayIndex = 0;
 
     for (let bucket of buckets) {
 
@@ -22,7 +23,7 @@ bucketSort = (nums, numBuckets = 4) => {
 
         for (let n of bucket) {
 
-            nums[aryIndex++] = n;
+            nums[arrayIndex++] = n;
 
         }
 

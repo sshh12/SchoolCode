@@ -1,9 +1,10 @@
+"use strict";
 
 let selectionSort = (nums) => {
 
     for (let i in nums) {
 
-        minIndex = i;
+        let minIndex = i;
 
         for (let j = i; j < nums.length; j++) {
 

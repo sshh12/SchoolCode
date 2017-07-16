@@ -1,5 +1,6 @@
+"use strict";
 
-insertionSort = (nums) => {
+let insertionSort = (nums) => {
 
     for (let i in nums) {
 
