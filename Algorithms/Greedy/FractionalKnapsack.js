@@ -2,16 +2,16 @@
 
 class Item {
 
-    constructor(v, w) {
+    constructor(p, w) {
 
-        this.value = v;
+        this.price = p;
         this.weight = w;
 
     }
 
     get ratio() {
 
-        return this.value / this.weight;
+        return this.price / this.weight;
 
     }
 
@@ -29,7 +29,7 @@ let getMaxValue = (items, maxWeight) => {
         if (currentWeight + item.weight <= maxWeight) {
 
             currentWeight += item.weight;
-            currentValue += item.value;
+            currentValue += item.price;
 
         } else {
 

@@ -4,8 +4,8 @@ class Segment {
 
     constructor(s, e) {
 
-        this.start = s;
-        this.end = e;
+        this.startPos = s;
+        this.endPos = e;
 
     }
 
@@ -13,17 +13,17 @@ class Segment {
 
 let getOptimalPoints = (segments) => {
 
-    segments.sort((a, b) => a.end - b.end);
+    segments.sort((a, b) => a.endPos - b.endPos);
 
-    let current = segments[0].end;
+    let current = segments[0].endPos;
 
     let points = [current];
 
     for (let i = 0; i < segments.length; i++) {
 
-        if (current < segments[i].start || current > segments[i].end) {
+        if (current < segments[i].startPos || current > segments[i].endPos) {
 
-            current = segments[i].end;
+            current = segments[i].endPos;
 
             points.push(current);
 
