@@ -7,7 +7,7 @@ class Item(object):
 
     @property
     def ratio(self):
-        return self.value / self.weight
+        return self.value / float(self.weight)
 
 def get_max_value(items, max_weight):
 
