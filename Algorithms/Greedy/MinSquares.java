@@ -5,8 +5,8 @@ public class MinSquares {
 
         int result = 0;
 
-        int largeSide = Math.max(length, width);
-        int smallSide = Math.min(length, width);
+        int largeSide = Math.max(length, width),
+            smallSide = Math.min(length, width);
 
         while (smallSide > 0) {
 
