@@ -5,7 +5,7 @@ def get_largest_number(nums):
 
     values = list(map(str, nums))
 
-    values.sort(key=cmp_to_key( lambda a, b: (b + a) > (a + b) ))
+    values.sort(key=cmp_to_key( lambda a, b: 1 if (b + a) > (a + b) else -1 ))
 
     return int("".join(values))
 
