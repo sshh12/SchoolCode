@@ -1,11 +1,14 @@
+
 class Job(object):
 
     def __init__(self, n, d, p):
+
         self.name = n
         self.deadline = d
         self.profit = p
 
     def __repr__(self):
+
         return self.name
 
 def print_best_order(jobs):
@@ -25,10 +28,13 @@ def print_best_order(jobs):
 
                 results[j] = i
                 times[j] = True
+                
                 break
 
     for i in range(n):
+
         if times[i]:
+
             print(jobs[results[i]])
 
 

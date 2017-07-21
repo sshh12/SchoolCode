@@ -9,19 +9,25 @@ public class Jobs {
         int deadline, profit;
 
         public Job(String n, int d, int p) {
+
             name = n;
             deadline = d;
             profit = p;
+
         }
 
         @Override
         public int compareTo(Job b) {
+
             return b.profit - profit;
+
         }
 
         @Override
         public String toString() {
+
             return name;
+
         }
 
     }
@@ -43,6 +49,7 @@ public class Jobs {
 
                     results[j] = i;
                     times[j] = true;
+                    
                     break;
 
                 }
@@ -52,9 +59,13 @@ public class Jobs {
         }
 
         for (int i = 0; i < n; i++) {
+
             if (times[i]) {
+
                 System.out.println(jobs.get(results[i]));
+
             }
+
         }
 
     }
