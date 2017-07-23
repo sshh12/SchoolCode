@@ -1,6 +1,19 @@
 
 public class BinaryKnapsack {
 
+    static class Item {
+
+        int weight, value;
+
+        public Item(int v, int w) {
+
+            value = v;
+            weight = w;
+            
+        }
+
+    }
+
     public static int getMaxValue(int capacity, Item[] items, int n) {
 
         if (capacity == 0 || n == 0) {
@@ -48,17 +61,6 @@ public class BinaryKnapsack {
         }
 
         return db[n][capacity];
-
-    }
-
-    static class Item {
-
-        int weight, value;
-
-        public Item(int v, int w) {
-            value = v;
-            weight = w;
-        }
 
     }
 

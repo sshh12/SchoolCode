@@ -1,10 +1,12 @@
 "use strict";
 
 let make2DArray = (rows, cols = rows) => {
-  var array = [], row = [];
-  while (cols--) row.push(0);
-  while (rows--) array.push(row.slice());
-  return array;
+
+    var array = [], row = [];
+    while (cols--) row.push(0);
+    while (rows--) array.push(row.slice());
+    return array;
+
 }
 
 let recur = (board, col = 0) => {
