@@ -4,7 +4,9 @@ public class RodCutting {
     public static int getMaxPrice(int[] prices, int index) {
 
         if (index < 0) {
+
             return 0;
+
         }
 
         int max = 0;

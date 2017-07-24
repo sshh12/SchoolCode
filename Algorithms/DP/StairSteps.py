@@ -1,37 +1,39 @@
 
 def count_ways(steps):
 
-    if steps < 1:
-        return 0
+    if steps <= 1:
+        return steps
 
     else:
-        return (1 + count_ways(steps - 1) +
-                    count_ways(steps - 2) +
-                    count_ways(steps - 3))
+
+        sum_, i = 0, 1
+
+        for i in range(1, min(steps, 3) + 1):
+
+            sum_ += count_ways(steps - i)
+
+        return sum_
 
 def count_ways2(steps):
 
-    db = [ 0 ] * (steps + 1)
+    if steps == 1:
+        return 1
 
-    db[0], db[1] = 1, 1
+    else:
 
-    for i in range(2, steps + 1):
+        db = [0, 1, 2, 4] + [ 0 ] * (steps - 3)
 
-        k = 1
+        for i in range(4, steps + 1):
 
-        while k <= 3 and k <= i:
+            db[i] = db[i - 1] + db[i - 2] + db[i - 3]
 
-            db[i] += db[i - k]
-
-            k += 1
-
-    return db[-1]
+        return db[-1]
 
 def main():
 
-    print(count_ways(3))
+    print(count_ways(22 + 1))
     print("------")
-    print(count_ways2(3))
+    print(count_ways2(22))
 
 if __name__ == '__main__':
     main()
