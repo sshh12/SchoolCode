@@ -37,7 +37,9 @@ def solve(grid, start, end):
         else:
 
             for n in _get_neighbors(grid, cur):
+
                 if n not in visited:
+
                     q.append(n)
                     parents.update({n : cur})
 
@@ -56,7 +58,6 @@ def solve2(grid, end, visited=None, parents=None, q=None, start=None):
         return None
 
     cur = q.pop(0)
-
     visited.append(cur)
 
     if cur == end:
@@ -76,9 +77,8 @@ def solve2(grid, end, visited=None, parents=None, q=None, start=None):
 
             if n not in visited:
 
-                parents.update({n : cur})
-
                 q.append(n)
+                parents.update({n : cur})
 
                 new_path = solve2(grid, end, visited, parents, q)
 
@@ -98,11 +98,13 @@ def main():
         ".##.."
     ]
 
-    for p in solve(grid, (0,0), (4,4)):
-        print(p)
+    for point in solve(grid, (0,0), (4,4)):
+        print(point)
+
     print("------")
-    for p in solve2(grid, (4,4), start=(0,0)):
-        print(p)
+
+    for point in solve2(grid, (4,4), start=(0,0)):
+        print(point)
 
 if __name__ == '__main__':
     main()

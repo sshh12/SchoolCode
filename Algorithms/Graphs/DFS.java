@@ -29,8 +29,10 @@ public class DFS {
                 Point node = cur;
 
                 while (node != null) {
+
                     path.addFirst(node);
                     node = parents.get(node);
+
                 }
 
                 return path;
@@ -59,7 +61,9 @@ public class DFS {
     }
 
     public static List<Point> solve2(char[][] mat, Point start, Point end) {
+
         return recur(mat, start, end, new HashSet<Point>(), new ArrayList<Point>());
+
     }
 
     private static List<Point> recur(char[][] mat, Point cur, Point end, Set<Point> visited, List<Point> path) {
@@ -80,11 +84,11 @@ public class DFS {
                 if (inBounds(mat, n) && !visited.contains(n) && mat[n.x][n.y] == '.') {
 
                     path.add(cur);
-                    List<Point> p = recur(mat, n, end, visited, path);
+                    List<Point> newPath = recur(mat, n, end, visited, path);
 
-                    if (p != null) {
+                    if (newPath != null) {
 
-                        return p;
+                        return newPath;
 
                     } else {
 
@@ -98,6 +102,7 @@ public class DFS {
         }
 
         return null;
+
     }
 
     public static void main(String[] args) {
@@ -110,14 +115,14 @@ public class DFS {
             {'.', '#', '#', '.', '.'}
         };
 
-        for (Point p : solve(grid, new Point(0, 0), new Point(4, 4))) {
-            System.out.println(p);
+        for (Point point : solve(grid, new Point(0, 0), new Point(4, 4))) {
+            System.out.println(point);
         }
 
         System.out.println("------");
 
-        for (Point p : solve2(grid, new Point(0, 0), new Point(4, 4))) {
-            System.out.println(p);
+        for (Point point : solve2(grid, new Point(0, 0), new Point(4, 4))) {
+            System.out.println(point);
         }
 
     }

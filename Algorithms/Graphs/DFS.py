@@ -37,7 +37,9 @@ def solve(grid, start, end):
         else:
 
             for n in _get_neighbors(grid, cur):
+
                 if n not in visited:
+
                     stack.append(n)
                     parents.update({n : cur})
 
@@ -72,8 +74,8 @@ def solve2(grid, cur, end, visited=None, path=None):
 
                 else:
 
-                    path.remove(cur)
-                    
+                    path.pop()
+
     return None
 
 def main():
@@ -86,11 +88,13 @@ def main():
         ".##.."
     ]
 
-    for p in solve(grid, (0,0), (4,4)):
-        print(p)
+    for point in solve(grid, (0,0), (4,4)):
+        print(point)
+
     print("------")
-    for p in solve2(grid, (0,0), (4,4)):
-        print(p)
+
+    for point in solve2(grid, (0,0), (4,4)):
+        print(point)
 
 if __name__ == '__main__':
     main()

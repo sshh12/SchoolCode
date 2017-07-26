@@ -29,8 +29,10 @@ public class BFS {
                 Point node = cur;
 
                 while (node != null) {
+
                     path.addFirst(node);
                     node = parents.get(node);
+
                 }
 
                 return path;
@@ -40,9 +42,12 @@ public class BFS {
                 for (int[] dir : dirs) {
 
                     Point n = new Point(cur.x + dir[0], cur.y + dir[1]);
+
                     if (inBounds(mat, n) && !visited.contains(n) && mat[n.x][n.y] == '.') {
+
                         q.add(n);
                         parents.put(n, cur);
+
                     }
 
                 }
@@ -79,8 +84,10 @@ public class BFS {
             Point node = cur;
 
             while (node != null) {
+
                 path.addFirst(node);
                 node = parents.get(node);
+
             }
 
             return path;
@@ -123,14 +130,14 @@ public class BFS {
             {'.', '#', '#', '.', '.'}
         };
 
-        for (Point p : solve(grid, new Point(0, 0), new Point(4, 4))) {
-            System.out.println(p);
+        for (Point point : solve(grid, new Point(0, 0), new Point(4, 4))) {
+            System.out.println(point);
         }
 
         System.out.println("------");
 
-        for (Point p : solve2(grid, new Point(0, 0), new Point(4, 4))) {
-            System.out.println(p);
+        for (Point point : solve2(grid, new Point(0, 0), new Point(4, 4))) {
+            System.out.println(point);
         }
 
     }
