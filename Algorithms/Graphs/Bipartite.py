@@ -1,5 +1,5 @@
 
-def bfs(graph, vertex, color_map):
+def _bfs(graph, vertex, color_map):
 
     color_map[vertex] = 1
 
@@ -31,7 +31,7 @@ def is_bipartite(graph):
 
     for i in range(len(graph)):
 
-        if color_map[i] == -1 and not bfs(graph, i, color_map):
+        if color_map[i] == -1 and not _bfs(graph, i, color_map):
 
             return False
 
