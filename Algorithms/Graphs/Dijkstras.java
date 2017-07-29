@@ -9,7 +9,9 @@ public class Dijkstras {
         boolean[] visited = new boolean[numVertices];
 
         for (int i = 0; i < numVertices; i++) {
+
             dists[i] = Integer.MAX_VALUE;
+
         }
 
         dists[fromVertex] = 0;
@@ -19,10 +21,14 @@ public class Dijkstras {
             int minDist = Integer.MAX_VALUE, vertex = -1;
 
             for (int v = 0; v < numVertices; v++) {
+
                 if (!visited[v] && dists[v] <= minDist) {
+
                     minDist = dists[v];
                     vertex = v;
+
                 }
+
             }
 
             visited[vertex] = true;
@@ -34,7 +40,9 @@ public class Dijkstras {
                     int newDist = dists[vertex] + graph[vertex][neighbor];
 
                     if (newDist < dists[neighbor]) {
+                      
                         dists[neighbor] = newDist;
+
                     }
 
                 }
@@ -44,7 +52,9 @@ public class Dijkstras {
         }
 
         for (int v = 0; v < numVertices; v++) {
+
             System.out.println(v + " " + dists[v]);
+
         }
 
     }

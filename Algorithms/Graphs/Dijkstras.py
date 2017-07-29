@@ -11,11 +11,13 @@ def print_distances(graph, from_vertex=0):
 
     for k in range(num_vertices - 1):
 
-        minDist, vertex = INF, -1
+        min_dist, vertex = INF, -1
 
         for v in range(num_vertices):
-            if not visited[v] and dists[v] <= minDist:
-                minDist, vertex = dists[v], v
+
+            if not visited[v] and dists[v] <= min_dist:
+
+                min_dist, vertex = dists[v], v
 
         visited[vertex] = True
 
