@@ -45,6 +45,8 @@ An A* based puzzle solver.
 
 #### Graphs
 
+###### AStar
+
 ###### BellmanFord
 
 ###### BFS
