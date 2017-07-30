@@ -25,6 +25,8 @@ An A* based puzzle solver.
 
 ###### BinarySearch
 
+###### BubbleSort
+
 ###### BucketSort
 
 ###### HeapSort
