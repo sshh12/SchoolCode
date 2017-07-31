@@ -23,100 +23,100 @@ An A* based puzzle solver.
 
 #### SortingSearching
 
-###### BinarySearch
+###### BinarySearch ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### BubbleSort
+###### BubbleSort ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### BucketSort
+###### BucketSort ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### HeapSort
+###### HeapSort ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### InsertionSort
+###### InsertionSort ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### InterpolationSearch
+###### InterpolationSearch ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### MergeSort
+###### MergeSort ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### QuickSort
+###### QuickSort ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### RadixSort
+###### RadixSort ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### ShellSort
+###### ShellSort ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### SelectionSort
+###### SelectionSort ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
 #### Graphs
 
-###### AStar
+###### AStar ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### BellmanFord
+###### BellmanFord ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### BFS
+###### BFS ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### Bipartite
+###### Bipartite ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### BoruvkaMST
+###### BoruvkaMST ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### DFS
+###### DFS ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### Dijkstras
+###### Dijkstras ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### KruskalMST
+###### KruskalMST ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### PrimMST
+###### PrimMST ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### TopologicalSort
+###### TopologicalSort ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
 #### DP
 
-###### BinaryKnapsack
+###### BinaryKnapsack ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### CoinChange
+###### CoinChange ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### LCS
+###### LCS ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### LIS
+###### LIS ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### NumPaths
+###### NumPaths ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### NumSubsetSum
+###### NumSubsetSum ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### RodCutting
+###### RodCutting ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### StairSteps
+###### StairSteps ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### SubsetSum
+###### SubsetSum ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
 #### Greedy
 
-###### CoveringSegments
+###### CoveringSegments ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### FractionalKnapsack
+###### FractionalKnapsack ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### Huffman
+###### Huffman ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### Jobs
+###### Jobs ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### LargestNumber
+###### LargestNumber ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### MaxDotProduct
+###### MaxDotProduct ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### MinSquares
+###### MinSquares ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### PerfectChange
+###### PerfectChange ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### SmallestNumber
+###### SmallestNumber ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### UniqueSummands
+###### UniqueSummands ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
 #### Backtracking
 
-###### NQueens
+###### NQueens ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### Permutations
+###### Permutations ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
 #### DivideConquer
 
-###### ClosestPoints
+###### ClosestPoints ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
-###### ThreeSUM
+###### ThreeSUM ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
