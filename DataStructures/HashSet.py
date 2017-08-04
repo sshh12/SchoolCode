@@ -1,5 +1,5 @@
 
-class HashSet(object):
+class HashSet1(object):
 
     def __init__(self, num_buckets=10):
 
@@ -53,7 +53,7 @@ class HashSet2(object):
 
 def main():
 
-    for hashset_class in [HashSet, HashSet2]:
+    for hashset_class in [HashSet1, HashSet2]:
 
         hashset = hashset_class()
 

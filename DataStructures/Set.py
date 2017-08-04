@@ -1,5 +1,5 @@
 
-class Set(object):
+class Set1(object):
 
     def __init__(self):
 
@@ -39,7 +39,7 @@ class Set2(object):
 
 def main():
 
-    for set_class in [Set, Set2]:
+    for set_class in [Set1, Set2]:
 
         set_ = set_class()
 

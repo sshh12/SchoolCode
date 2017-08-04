@@ -1,6 +1,6 @@
 "use strict";
 
-class Heap {
+class Heap1 {
 
     constructor() {
 
@@ -89,7 +89,7 @@ class Heap {
 
 }
 
-for (let heapClass of [Heap]) {
+for (let heapClass of [Heap1]) {
 
     let heap = new heapClass();
 

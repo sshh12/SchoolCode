@@ -1,6 +1,6 @@
 from heapq import heappop, heappush
 
-class Heap(object):
+class Heap1(object):
 
     def __init__(self):
 
@@ -85,7 +85,7 @@ class Heap2(object):
 
 def main():
 
-    for heap_class in [Heap, Heap2]:
+    for heap_class in [Heap1, Heap2]:
 
         heap = heap_class()
 

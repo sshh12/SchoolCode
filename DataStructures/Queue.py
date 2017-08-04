@@ -1,6 +1,6 @@
 from collections import deque
 
-class Queue(object):
+class Queue1(object):
 
     def __init__(self):
 
@@ -30,7 +30,7 @@ class Queue2(object):
 
 def main():
 
-    for q_class in [Queue, Queue2]:
+    for q_class in [Queue1, Queue2]:
 
         queue = q_class()
 

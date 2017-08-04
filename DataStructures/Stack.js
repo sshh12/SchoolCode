@@ -1,6 +1,6 @@
 "use strict";
 
-class Stack {
+class Stack1 {
 
     constructor() {
 
@@ -22,7 +22,7 @@ class Stack {
 
 }
 
-for (let stackClass of [Stack]) {
+for (let stackClass of [Stack1]) {
 
     let stack = new stackClass();
 

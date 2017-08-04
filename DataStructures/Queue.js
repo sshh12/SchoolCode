@@ -1,6 +1,6 @@
 "use strict";
 
-class Queue {
+class Queue1 {
 
     constructor() {
 
@@ -22,7 +22,7 @@ class Queue {
 
 }
 
-for (let qClass of [Queue]) {
+for (let qClass of [Queue1]) {
 
     let queue = new qClass();
 

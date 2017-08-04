@@ -1,6 +1,6 @@
 from collections import deque
 
-class Stack(object):
+class Stack1(object):
 
     def __init__(self):
 
@@ -30,7 +30,7 @@ class Stack2(object):
 
 def main():
 
-    for stack_class in [Stack, Stack2]:
+    for stack_class in [Stack1, Stack2]:
 
         stack = stack_class()
 
