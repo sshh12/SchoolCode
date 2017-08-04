@@ -127,4 +127,6 @@ An A* based puzzle solver.
 
 ###### Queue
 
+###### Set
+
 ###### Stack
