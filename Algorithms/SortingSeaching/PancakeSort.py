@@ -1,9 +1,9 @@
 
-def flip(nums, end_index):
+def _flip(nums, end_index):
 
     nums[:end_index+1] = nums[end_index::-1]
 
-def find_max_index(nums, endIndex):
+def _max_index(nums, endIndex):
 
     return nums.index(max(nums[:endIndex]))
 
@@ -11,12 +11,12 @@ def pancake_sort(nums):
 
     for size in reversed(range(2, len(nums) + 1)):
 
-        max_index = find_max_index(nums, size)
+        max_index = _max_index(nums, size)
 
         if max_index != size - 1:
 
-            flip(nums, max_index)
-            flip(nums, size - 1)
+            _flip(nums, max_index)
+            _flip(nums, size - 1)
 
 def main():
 

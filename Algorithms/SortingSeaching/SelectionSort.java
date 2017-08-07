@@ -1,7 +1,6 @@
 
 import java.util.Arrays;
 
-
 public class SelectionSort {
 
     private static void swap(int[] nums, int a, int b) {
