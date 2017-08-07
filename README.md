@@ -25,6 +25,8 @@ An A* based puzzle solver.
 
 ###### BinarySearch
 
+###### BogoSort
+
 ###### BubbleSort
 
 ###### BucketSort
@@ -36,6 +38,8 @@ An A* based puzzle solver.
 ###### InterpolationSearch
 
 ###### MergeSort
+
+###### PancakeSort
 
 ###### QuickSort
 
