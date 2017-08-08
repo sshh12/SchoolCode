@@ -11,13 +11,13 @@ class Set1(object):
 
             self.items.append(item)
 
-    def has(self, item):
-
-        return item in self.items
-
     def remove(self, item):
 
         self.items.remove(item)
+
+    def __contains__(self, item):
+
+        return item in self.items
 
 class Set2(object):
 
@@ -29,13 +29,13 @@ class Set2(object):
 
         self.items.add(item)
 
-    def has(self, item):
-
-        return item in self.items
-
     def remove(self, item):
 
         self.items.discard(item)
+
+    def __contains__(self, item):
+
+        return item in self.items
 
 def main():
 
@@ -47,13 +47,13 @@ def main():
         set_.add(2)
         set_.add(1)
 
-        print(set_.has(1))
+        print(1 in set_)
 
         set_.remove(1)
 
-        print(set_.has(1))
+        print(1 in set_)
 
-        print(set_.has(2))
+        print(2 in set_)
 
         print("------")
 

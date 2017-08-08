@@ -21,17 +21,17 @@ class HashSet1(object):
 
             self.buckets[index].append(item)
 
-    def has(self, item):
-
-        index = self._hash(item)
-
-        return item in self.buckets[index]
-
     def remove(self, item):
 
         index = self._hash(item)
 
         self.buckets[index].remove(item)
+
+    def __contains__(self, item):
+
+        index = self._hash(item)
+
+        return item in self.buckets[index]
 
 class HashSet2(object):
 
@@ -43,13 +43,13 @@ class HashSet2(object):
 
         self.hashset.add(item)
 
-    def has(self, item):
-
-        return item in self.hashset
-
     def remove(self, item):
 
         self.hashset.discard(item)
+
+    def __contains__(self, item):
+
+        return item in self.hashset
 
 def main():
 
@@ -61,13 +61,13 @@ def main():
         hashset.add(2)
         hashset.add(1)
 
-        print(hashset.has(1))
+        print(1 in hashset)
 
         hashset.remove(1)
 
-        print(hashset.has(1))
+        print(1 in hashset)
 
-        print(hashset.has(2))
+        print(2 in hashset)
 
         print("------")
 

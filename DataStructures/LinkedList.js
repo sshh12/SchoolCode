@@ -1,16 +1,5 @@
 "use strict";
 
-class Node {
-
-    constructor(data, nextNode = null) {
-
-        this.data = data;
-        this.nextNode = nextNode;
-
-    }
-
-}
-
 class LinkedList1 {
 
     constructor() {
@@ -24,7 +13,10 @@ class LinkedList1 {
 
         if (!this.root) {
 
-            this.root = new Node(item);
+            this.root = {
+                data: item,
+                nextNode: null
+            };
 
         } else {
 
@@ -36,7 +28,10 @@ class LinkedList1 {
 
             }
 
-            node.nextNode = new Node(item);
+            node.nextNode = {
+                data: item,
+                nextNode: null
+            };
 
         }
 
@@ -46,7 +41,10 @@ class LinkedList1 {
 
     addFront(item) {
 
-        this.root = new Node(item, this.root);
+        this.root = {
+            data: item,
+            nextNode: this.root
+        };
 
         this.length++;
 
