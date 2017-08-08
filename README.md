@@ -127,6 +127,8 @@ An A* based puzzle solver.
 
 ## Data Structures ![js](https://user-images.githubusercontent.com/6625384/28796015-98460b06-7601-11e7-8839-135c0ba09b6a.png) ![python](https://user-images.githubusercontent.com/6625384/28796097-e0cb7adc-7601-11e7-9057-91b2af801d32.png) ![java](https://user-images.githubusercontent.com/6625384/28796200-4617e4ca-7602-11e7-9e39-44e38e154d9d.png)
 
+###### BinaryTree
+
 ###### HashSet
 
 ###### Heap
