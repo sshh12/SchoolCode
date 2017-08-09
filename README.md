@@ -31,6 +31,8 @@ An A* based puzzle solver.
 
 ###### BucketSort
 
+###### CycleSort
+
 ###### HeapSort
 
 ###### InsertionSort
