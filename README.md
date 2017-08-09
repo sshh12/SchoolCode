@@ -49,6 +49,8 @@ An A* based puzzle solver.
 
 ###### SelectionSort
 
+###### TimSort
+
 #### Graphs
 
 ###### AStar
