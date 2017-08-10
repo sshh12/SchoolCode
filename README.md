@@ -145,4 +145,6 @@ An A* based puzzle solver.
 
 ###### Stack
 
+###### Trie
+
 ###### UnionFind
