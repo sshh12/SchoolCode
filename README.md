@@ -141,6 +141,8 @@ An A* based puzzle solver.
 
 ###### Queue
 
+###### SegmentTree
+
 ###### Set
 
 ###### Stack
