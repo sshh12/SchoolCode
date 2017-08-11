@@ -7,7 +7,7 @@ public class Set {
 
         public void add(int item);
 
-        public boolean has(int item);
+        public boolean contains(int item);
 
         public void remove(int item);
 
@@ -33,7 +33,7 @@ public class Set {
 
         }
 
-        public boolean has(int item) {
+        public boolean contains(int item) {
 
             return items.contains(item);
 
@@ -63,7 +63,7 @@ public class Set {
 
         }
 
-        public boolean has(int item) {
+        public boolean contains(int item) {
 
             return items.contains(item);
 
@@ -87,13 +87,13 @@ public class Set {
             set.add(2);
             set.add(1);
 
-            System.out.println(set.has(1));
+            System.out.println(set.contains(1));
 
             set.remove(1);
 
-            System.out.println(set.has(1));
+            System.out.println(set.contains(1));
 
-            System.out.println(set.has(2));
+            System.out.println(set.contains(2));
 
             System.out.println("------");
 

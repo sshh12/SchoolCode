@@ -8,6 +8,8 @@ class Trie1 {
             children: []
         };
 
+        this.noChild = child => typeof child == 'undefined';
+
     }
 
     _get_index(char) {
@@ -38,6 +40,34 @@ class Trie1 {
         }
 
         node.isEnd = true;
+
+    }
+
+    remove(item, node = this.root, depth = 0) {
+
+        if (node) {
+
+            if (depth == item.length) {
+
+                node.isEnd = false;
+
+                return node.children.every(this.noChild);
+
+            } else {
+
+                let index = this._get_index(item[depth]);
+
+                if (this.remove(item, node.children[index], depth + 1)) {
+
+                    delete node.children[index];
+
+                    return (!node.isEnd && node.children.every(this.noChild));
+
+                }
+
+            }
+
+        }
 
     }
 
@@ -75,7 +105,6 @@ for (let trieClass of [Trie1]) {
     trie.add("any");
     trie.add("by");
     trie.add("bye");
-    trie.add("answer");
 
     console.log(trie.has("the"));
     console.log(trie.has("bye"));
@@ -84,8 +113,10 @@ for (let trieClass of [Trie1]) {
     console.log(trie.has("ant"));
 
     trie.add("ant");
+    trie.remove("bye");
 
     console.log(trie.has("ant"));
+    console.log(trie.has("bye"));
 
     console.log("------");
 

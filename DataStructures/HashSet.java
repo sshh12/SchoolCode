@@ -7,7 +7,7 @@ public class HashSet {
 
         public void add(int item);
 
-        public boolean has(int item);
+        public boolean contains(int item);
 
         public void remove(int item);
 
@@ -47,7 +47,7 @@ public class HashSet {
 
         }
 
-        public boolean has(int item) {
+        public boolean contains(int item) {
 
             int index = hash(item);
 
@@ -81,7 +81,7 @@ public class HashSet {
 
         }
 
-        public boolean has(int item) {
+        public boolean contains(int item) {
 
             return hashSet.contains(item);
 
@@ -105,13 +105,13 @@ public class HashSet {
             hashSet.add(2);
             hashSet.add(1);
 
-            System.out.println(hashSet.has(1));
+            System.out.println(hashSet.contains(1));
 
             hashSet.remove(1);
 
-            System.out.println(hashSet.has(1));
+            System.out.println(hashSet.contains(1));
 
-            System.out.println(hashSet.has(2));
+            System.out.println(hashSet.contains(2));
 
             System.out.println("------");
 

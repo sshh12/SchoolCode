@@ -7,6 +7,8 @@ public class Trie {
 
         public boolean contains(String item);
 
+        public void remove(String item);
+
     }
 
     private static class Node {
@@ -17,6 +19,22 @@ public class Trie {
         public Node() {
 
             children = new Node[26];
+
+        }
+
+        public boolean hasChild() {
+
+            for (Node child : children) {
+
+                if (child != null) {
+
+                    return true;
+
+                }
+
+            }
+
+            return false;
 
         }
 
@@ -60,6 +78,42 @@ public class Trie {
 
         }
 
+        public void remove(String item) {
+
+            delete(item, root, 0);
+
+        }
+
+        private boolean delete(String item, Node node, int depth) {
+
+            if (node != null) {
+
+                if (depth == item.length()) {
+
+                    node.isEnd = false;
+
+                    return !node.hasChild();
+
+                } else {
+
+                    int index = getIndex(item.charAt(depth));
+
+                    if (delete(item, node.children[index], depth + 1)) {
+
+                        node.children[index] = null;
+
+                        return (!node.isEnd && !node.hasChild());
+
+                    }
+
+                }
+
+            }
+
+            return false;
+
+        }
+
         public boolean contains(String item) {
 
             Node node = root;
@@ -96,7 +150,6 @@ public class Trie {
             trie.add("any");
             trie.add("by");
             trie.add("bye");
-            trie.add("answer");
 
             System.out.println(trie.contains("the"));
             System.out.println(trie.contains("bye"));
@@ -105,8 +158,10 @@ public class Trie {
             System.out.println(trie.contains("ant"));
 
             trie.add("ant");
+            trie.remove("bye");
 
             System.out.println(trie.contains("ant"));
+            System.out.println(trie.contains("bye"));
 
             System.out.println("------");
 

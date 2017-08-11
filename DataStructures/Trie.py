@@ -32,6 +32,32 @@ class Trie1(object):
 
         node.is_end = True
 
+    def remove(self, item, node=None, depth=None):
+
+        if not node and not depth:
+
+            self.remove(item, self.root, 0)
+
+        elif node:
+
+            if depth == len(item):
+
+                node.is_end = False
+
+                return not any(node.children)
+
+            else:
+
+                index = self._get_index(item[depth])
+
+                if self.remove(item, node.children[index], depth + 1):
+
+                    node.children[index] = None
+
+                    return (not node.is_end and not any(node.children))
+
+        return False
+
     def __contains__(self, item):
 
         node = self.root
@@ -60,7 +86,6 @@ def main():
         trie.add("any")
         trie.add("by")
         trie.add("bye")
-        trie.add("awswer")
 
         print("the" in trie)
         print("bye" in trie)
@@ -69,8 +94,10 @@ def main():
         print("ant" in trie)
 
         trie.add("ant")
+        trie.remove("bye")
 
         print("ant" in trie)
+        print("bye" in trie)
 
         print("------")
 
