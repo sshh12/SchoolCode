@@ -23,6 +23,8 @@ An A* based puzzle solver.
 
 #### SortingSearching
 
+###### BinaryInsertionSort
+
 ###### BinarySearch
 
 ###### BogoSort
