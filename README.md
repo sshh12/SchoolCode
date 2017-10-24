@@ -83,6 +83,8 @@ An A* based puzzle solver.
 
 ###### CoinChange
 
+###### EditDistance
+
 ###### LCS
 
 ###### LIS
