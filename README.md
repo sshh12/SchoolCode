@@ -127,6 +127,8 @@ An A* based puzzle solver.
 
 ###### Permutations
 
+###### ValidSnake
+
 #### DivideConquer
 
 ###### ClosestPoints
