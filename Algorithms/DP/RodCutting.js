@@ -22,8 +22,7 @@ let getMaxPrice = (prices, index = prices.length - 1) => {
 
 let getMaxPrice2 = (prices) => {
 
-    let db = [];
-    while (db.push(0) < prices.length + 1);
+    let db = (new Array(prices.length + 1)).fill(0);
 
     for (let i = 1; i <= prices.length; i++) {
 

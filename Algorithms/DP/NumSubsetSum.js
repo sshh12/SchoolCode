@@ -25,8 +25,8 @@ let countSubsetSums = (nums, sum, index = nums.length - 1) => {
 
 let countSubsetSums2 = (nums, sum) => {
 
-    let db = [1];
-    while (db.push(0) < sum + 1);
+    let db = (new Array(sum + 1)).fill(0);
+    db[0] = 1;
 
     for (let n of nums) {
 

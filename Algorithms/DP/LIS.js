@@ -46,8 +46,7 @@ let getLengthLIS2 = (nums) => {
 
     let n = nums.length, best = 0;
 
-    let db = [];
-    while (db.push(1) < n);
+    let db = (new Array(n)).fill(1);
 
     for (let i = 1; i < n; i++) {
 

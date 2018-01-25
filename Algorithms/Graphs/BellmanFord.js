@@ -47,8 +47,7 @@ let printDistances = (graph, fromVertex) => {
 
     let edges = getEdges(graph);
 
-    let dists = [];
-    while (dists.push(Number.MAX_VALUE) < graph.length);
+    let dists = (new Array(graph.length)).fill(Number.MAX_VALUE);
 
     dists[fromVertex] = 0;
 

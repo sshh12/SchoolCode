@@ -16,8 +16,7 @@ class BloomFilter {
 
     constructor(size = 10) {
 
-        this.store = [];
-        while (this.store.push(false) < size);
+        this.store = (new Array(size)).fill(false);
 
     }
 
@@ -25,7 +24,7 @@ class BloomFilter {
 
         let hashes = [
             item.hashCode(),
-            (item + "").hashCode(),
+            (item + " ").hashCode(),
             (item + "!").hashCode()
         ];
 

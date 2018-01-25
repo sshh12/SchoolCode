@@ -19,8 +19,8 @@ let getNumCoins = (coins, balance, i = coins.length) => {
 
 let getNumCoins2 = (coins, balance) => {
 
-    let db = [1];
-    while (db.push(0) < balance + 1);
+    let db = (new Array(balance + 1)).fill(0);
+    db[0] = 1;
 
     for (let k in coins) {
 
