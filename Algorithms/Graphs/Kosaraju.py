@@ -5,7 +5,7 @@ def _set_order(graph, vertex, visited, stack):
 
     for neighbor, dist in enumerate(graph[vertex]):
 
-        if not visited[neighbor] and dist > 0 :
+        if not visited[neighbor] and dist > 0:
 
             _set_order(graph, neighbor, visited, stack)
 
@@ -18,7 +18,7 @@ def _DFS(graph, vertex, visited, path):
 
     for neighbor, dist in enumerate(graph[vertex]):
 
-        if not visited[neighbor] and dist > 0 :
+        if not visited[neighbor] and dist > 0:
 
             _DFS(graph, neighbor, visited, path)
 
