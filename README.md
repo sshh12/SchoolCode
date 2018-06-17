@@ -158,6 +158,8 @@ A compilation of the projects and scripts I wrote during High School.
 
 ###### Set
 
+###### SparseSet
+
 ###### Stack
 
 ###### Trie
