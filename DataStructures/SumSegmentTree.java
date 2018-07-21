@@ -1,7 +1,7 @@
 
-public class SegmentTree {
+public class SumSegmentTree {
 
-    private interface SegmentTreeDataStructure {
+    private interface SumSegmentTreeDataStructure {
 
         public int sum(int rangeStart, int rangeEnd);
 
@@ -11,11 +11,11 @@ public class SegmentTree {
 
     }
 
-    private static class SegmentTree1 implements SegmentTreeDataStructure {
+    private static class SumSegmentTree1 implements SumSegmentTreeDataStructure {
 
         int[] nums, tree;
 
-        public SegmentTree1(int[] nums) {
+        public SumSegmentTree1(int[] nums) {
 
             this.nums = nums;
 
@@ -121,15 +121,15 @@ public class SegmentTree {
 
         int[] nums = new int[]{1, 2, 4, 6, 10, 20, 22};
 
-        SegmentTreeDataStructure[] segTreeClasses = new SegmentTreeDataStructure[]{new SegmentTree1(nums)};
+        SumSegmentTreeDataStructure[] sumSegTreeClasses = new SumSegmentTreeDataStructure[]{new SumSegmentTree1(nums)};
 
-        for (SegmentTreeDataStructure segTree : segTreeClasses) {
+        for (SumSegmentTreeDataStructure sumSegTree : sumSegTreeClasses) {
 
-            System.out.println(segTree.sum(2, 5));
+            System.out.println(sumSegTree.sum(2, 5));
 
-            segTree.set(3, 10);
+            sumSegTree.set(3, 10);
 
-            System.out.println(segTree.sum(2, 5));
+            System.out.println(sumSegTree.sum(2, 5));
 
             System.out.println("------");
 
