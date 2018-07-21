@@ -1,5 +1,5 @@
 
-class Job(object):
+class Job:
 
     def __init__(self, n, d, p):
 

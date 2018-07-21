@@ -1,13 +1,13 @@
 from collections import deque
 
-class Node(object):
+class Node:
 
     def __init__(self, data, next_node=None):
 
         self.data = data
         self.next_node = next_node
 
-class LinkedList1(object):
+class LinkedList1:
 
     def __init__(self):
 
@@ -88,7 +88,7 @@ class LinkedList1(object):
 
 
 
-class LinkedList2(object):
+class LinkedList2:
 
     def __init__(self):
 

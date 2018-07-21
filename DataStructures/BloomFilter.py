@@ -1,5 +1,5 @@
 
-class BloomFilter(object):
+class BloomFilter:
 
     def __init__(self, size=10):
 

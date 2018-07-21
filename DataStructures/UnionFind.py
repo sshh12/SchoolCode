@@ -1,5 +1,5 @@
 
-class UnionFind1(object):
+class UnionFind1:
 
     def __init__(self, num_nodes):
 

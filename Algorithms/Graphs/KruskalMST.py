@@ -1,7 +1,7 @@
 
 from itertools import combinations
 
-class Edge(object):
+class Edge:
 
     def __init__(self, frm, to, weight):
 

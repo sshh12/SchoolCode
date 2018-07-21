@@ -1,5 +1,5 @@
 
-class Node(object):
+class Node:
 
     def __init__(self, data, left=None, right=None):
 
@@ -7,7 +7,7 @@ class Node(object):
         self.left = left
         self.right = right
 
-class BinaryTree1(object):
+class BinaryTree1:
 
     def __init__(self):
 

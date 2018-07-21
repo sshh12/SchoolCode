@@ -1,5 +1,5 @@
 
-class Item(object):
+class Item:
 
     def __init__(self, v, w):
         self.value = v

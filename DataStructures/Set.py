@@ -1,5 +1,5 @@
 
-class Set1(object):
+class Set1:
 
     def __init__(self):
 
@@ -19,7 +19,7 @@ class Set1(object):
 
         return item in self.items
 
-class Set2(object):
+class Set2:
 
     def __init__(self):
 

@@ -1,5 +1,5 @@
 
-class HashSet1(object):
+class HashSet1:
 
     def __init__(self, num_buckets=10):
 
@@ -33,7 +33,7 @@ class HashSet1(object):
 
         return item in self.buckets[index]
 
-class HashSet2(object):
+class HashSet2:
 
     def __init__(self):
 

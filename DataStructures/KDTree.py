@@ -1,5 +1,5 @@
 
-class Node(object):
+class Node:
 
     def __init__(self, point, left=None, right=None):
 
@@ -7,7 +7,7 @@ class Node(object):
         self.left = left
         self.right = right
 
-class KDTree1(object):
+class KDTree1:
 
     def __init__(self, kdims):
 

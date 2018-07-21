@@ -2,7 +2,7 @@
 from itertools import combinations
 from math import sqrt
 
-class Point(object):
+class Point:
 
     def __init__(self, x, y):
         self.x = x

@@ -1,6 +1,6 @@
 from collections import deque
 
-class Stack1(object):
+class Stack1:
 
     def __init__(self):
 
@@ -14,7 +14,7 @@ class Stack1(object):
 
         return self.items.pop()
 
-class Stack2(object):
+class Stack2:
 
     def __init__(self):
 

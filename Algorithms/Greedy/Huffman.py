@@ -1,7 +1,7 @@
 from heapq import heappush, heappop
 from collections import Counter
 
-class Node(object):
+class Node:
 
     def __init__(self, value):
 

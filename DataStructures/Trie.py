@@ -1,12 +1,12 @@
 
-class Node(object):
+class Node:
 
     def __init__(self):
 
         self.children = [ None ] * 26
         self.is_end = False
 
-class Trie1(object):
+class Trie1:
 
     def __init__(self):
 

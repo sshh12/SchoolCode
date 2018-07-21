@@ -1,6 +1,6 @@
 from collections import deque
 
-class Queue1(object):
+class Queue1:
 
     def __init__(self):
 
@@ -14,7 +14,7 @@ class Queue1(object):
 
         return self.items.pop(0)
 
-class Queue2(object):
+class Queue2:
 
     def __init__(self):
 

@@ -1,5 +1,5 @@
 
-class SparseSet1(object):
+class SparseSet1:
 
     def __init__(self, capacity=10, maxVal=10):
 

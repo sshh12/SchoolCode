@@ -1,7 +1,7 @@
 
 INF = 9e9
 
-class Edge(object):
+class Edge:
 
     def __init__(self, frm, to, dist):
 

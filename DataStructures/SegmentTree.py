@@ -1,6 +1,6 @@
 import math
 
-class SegmentTree1(object):
+class SegmentTree1:
 
     def __init__(self, nums):
 

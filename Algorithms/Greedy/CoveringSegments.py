@@ -1,5 +1,5 @@
 
-class Segment(object):
+class Segment:
 
     def __init__(self, s, e):
 
