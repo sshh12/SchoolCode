@@ -148,6 +148,8 @@ A compilation of the projects and scripts I wrote during High School.
 
 ###### Heap
 
+###### KDTree
+
 ###### LinkedList
 
 ###### Queue
