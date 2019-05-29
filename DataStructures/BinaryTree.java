@@ -25,9 +25,7 @@ public class BinaryTree {
         Node left, right;
 
         public Node(int value) {
-
             data = value;
-
         }
 
     }
@@ -37,19 +35,14 @@ public class BinaryTree {
         Node root;
 
         public BinaryTree1() {
-
         }
 
         public void add(int item) {
 
             if (root == null) {
-
                 root = new Node(item);
-
             } else {
-
                 add(root, item);
-
             }
 
         }
@@ -59,25 +52,17 @@ public class BinaryTree {
             if (item < node.data) {
 
                 if (node.left != null) {
-
                     add(node.left, item);
-
                 } else {
-
                     node.left = new Node(item);
-
                 }
 
             } else {
 
                 if (node.right != null) {
-
                     add(node.right, item);
-
                 } else {
-
                     node.right = new Node(item);
-
                 }
 
             }
@@ -85,21 +70,14 @@ public class BinaryTree {
         }
 
         public void remove(int item) {
-
             root = deleteItem(root, item);
-
         }
 
         private Node minItem(Node node) {
-
             while (node.left != null) {
-
                 node = node.left;
-
             }
-
             return node;
-
         }
 
         private Node deleteItem(Node node, int item) {
@@ -107,33 +85,19 @@ public class BinaryTree {
             if (node != null) {
 
                 if (item < node.data) {
-
                     node.left = deleteItem(node.left, item);
-
                 } else if (item > node.data) {
-
                     node.right = deleteItem(node.right, item);
-
                 } else {
-
                     if (node.left == null) {
-
                         return node.right;
-
                     } else if (node.right == null) {
-
                         return node.left;
-
                     } else {
-
                         Node minNode = minItem(node.right);
-
                         node.data = minNode.data;
-
                         node.right = deleteItem(node.right, minNode.data);
-
                     }
-
                 }
 
             }
@@ -143,29 +107,19 @@ public class BinaryTree {
         }
 
         public boolean contains(int item) {
-
             return contains(root, item);
-
         }
 
         private boolean contains(Node node, int item) {
 
             if (node == null) {
-
                 return false;
-
             } else if (item == node.data) {
-
                 return true;
-
             } else if (item < node.data) {
-
                 return contains(node.left, item);
-
             } else {
-
                 return contains(node.right, item);
-
             }
 
         }
@@ -183,9 +137,7 @@ public class BinaryTree {
         private void getPreOrder(Node node, ArrayList<Integer> items) {
 
             if (node == null) {
-
                 return;
-
             }
 
             items.add(node.data);
@@ -208,9 +160,7 @@ public class BinaryTree {
         private void getInOrder(Node node, ArrayList<Integer> items) {
 
             if (node == null) {
-
                 return;
-
             }
 
             getInOrder(node.left, items);

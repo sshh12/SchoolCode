@@ -7,6 +7,7 @@ class Node:
         self.left = left
         self.right = right
 
+
 class BinaryTree1:
 
     def __init__(self):
@@ -18,9 +19,7 @@ class BinaryTree1:
         if not node:
 
             if not self.root:
-
                 self.root = Node(item)
-
                 return
 
             node = self.root
@@ -28,31 +27,25 @@ class BinaryTree1:
         if item < node.data:
 
             if node.left:
-
                 self.add(item, node.left)
 
             else:
-
                 node.left = Node(item)
 
         else:
 
             if node.right:
-
                 self.add(item, node.right)
 
             else:
-
                 node.right = Node(item)
 
     def remove(self, item):
-
         self.root = self._delete_item(self.root, item)
 
     def _min_item(self, node):
 
         while node.left:
-
             node = node.left
 
         return node
@@ -62,29 +55,22 @@ class BinaryTree1:
         if node:
 
             if item < node.data:
-
                 node.left = self._delete_item(node.left, item)
 
             elif item > node.data:
-
                 node.right = self._delete_item(node.right, item)
 
             else:
 
                 if not node.left:
-
                     return node.right
 
                 elif not node.right:
-
                     return node.left
 
                 else:
-
                     min_node = self._min_item(node.right)
-
                     node.data = min_node.data
-
                     node.right = self._delete_item(node.right, min_node.data)
 
         return node
@@ -96,17 +82,14 @@ class BinaryTree1:
             node, items = self.root, []
 
             if not self.root:
-
                 return items
 
         items.append(node.data)
 
         if node.left:
-
             self.get_inorder(node.left, items)
 
         if node.right:
-
             self.get_inorder(node.right, items)
 
         return items
@@ -118,17 +101,14 @@ class BinaryTree1:
             node, items = self.root, []
 
             if not self.root:
-
                 return items
 
         if node.left:
-
             self.get_inorder(node.left, items)
 
         items.append(node.data)
 
         if node.right:
-
             self.get_inorder(node.right, items)
 
         return items
@@ -140,42 +120,30 @@ class BinaryTree1:
             node, items = self.root, []
 
             if not self.root:
-
                 return items
 
         if node.left:
-
             self.get_inorder(node.left, items)
 
         if node.right:
-
             self.get_inorder(node.right, items)
 
         items.append(node.data)
 
         return items
 
-    def __contains__(self, item, node=None):
+    def __contains__(self, item):
+        return self._contains(self.root, item)
 
-        if not node:
-
-            if self.root == None:
-
-                return False
-
-            node = self.root
-
-        if item == node.data:
-
+    def _contains(self, node, item):
+        if node is None:
+            return False
+        elif item == node.data:
             return True
-
-        elif node.left and item < node.data:
-
-            return self.__contains__(item, node.left)
-
+        elif item < node.data:
+            return self._contains(node.left, item)
         else:
-
-            return self.__contains__(item, node.right)
+            return self._contains(node.right, item)
 
 
 def main():
@@ -204,6 +172,7 @@ def main():
         print(bintree.get_inorder())
 
         print("------")
+
 
 if __name__ == '__main__':
     main()
