@@ -3,18 +3,6 @@
 #include<array>
 
 
-// template<typename E>
-// class BinaryTreeDataStructure {
-//   public:
-//     virtual void add(E item);
-//     virtual void remove(E item);
-//     virtual bool contains(E item);
-//     virtual std::list<E>* getPreOrder();
-//     virtual std::list<E>* getInOrder();
-//     virtual std::list<E>* getPostOrder();
-// };
-
-
 template<typename E>
 class Node {
   public:
@@ -28,7 +16,7 @@ class Node {
 
 
 template<typename E>
-class BinaryTree1 {
+class BinaryTree {
 
   public:
 
@@ -177,28 +165,23 @@ void print_list(std::list<E> items) {
 
 int main() {
 
-  std::array<BinaryTree1<int>*, 1> binTreeClasses {
-    new BinaryTree1<int>()
-  };
+  BinaryTree<int> binTree;
 
-  for(int i = 0; i < binTreeClasses.size(); i++) {
-    BinaryTree1<int> binTree = *binTreeClasses[i];
-    binTree.add(1);
-    binTree.add(0);
-    binTree.add(2);
-    std::cout << binTree.contains(2) << std::endl;
-    print_list(binTree.getInOrder());
-    print_list(binTree.getPreOrder());
-    print_list(binTree.getPostOrder());
-    binTree.remove(2);
-    binTree.add(3);
-    binTree.add(-1);
-    binTree.add(-3);
-    binTree.add(-2);
-    std::cout << binTree.contains(1) << std::endl;
-    print_list(binTree.getInOrder());
-    std::cout << "------" << std::endl;
-  }
+  binTree.add(1);
+  binTree.add(0);
+  binTree.add(2);
+  std::cout << binTree.contains(2) << std::endl;
+  print_list(binTree.getInOrder());
+  print_list(binTree.getPreOrder());
+  print_list(binTree.getPostOrder());
+  binTree.remove(2);
+  binTree.add(3);
+  binTree.add(-1);
+  binTree.add(-3);
+  binTree.add(-2);
+  std::cout << binTree.contains(1) << std::endl;
+  print_list(binTree.getInOrder());
+  std::cout << "------" << std::endl;
 
   return 0;
 
