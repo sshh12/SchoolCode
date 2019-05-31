@@ -1,6 +1,7 @@
 #include <iostream>
 #include <array>
 
+
 template<typename E, std::size_t SIZE>
 void print_array(std::array<E, SIZE> nums) {
   for(int i(0); i < SIZE; i++) {
@@ -8,6 +9,7 @@ void print_array(std::array<E, SIZE> nums) {
   }
   std::cout << std::endl;
 }
+
 
 template<typename E, std::size_t SIZE>
 void insertion_sort(std::array<E, SIZE>& nums) {
@@ -25,6 +27,7 @@ void insertion_sort(std::array<E, SIZE>& nums) {
   }
 
 }
+
 
 int main() {
 
